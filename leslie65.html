@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+  <div id="recuadro1"> 
+      <h1>Mi nombre es Leslie</h1>
+
+  </div>
+
+<script>
+  addEventListener('DOMContentLoaded',inicio,false);
+
+  function inicio()
+  {
+    document.getElementById('recuadro1').addEventListener('mouseover',entrada,false);
+    document.getElementById('recuadro1').addEventListener('mouseout',salida,false);
+  }
+
+  function entrada()
+  {
+    document.getElementById('recuadro1').style.color='red';
+    document.getElementById('recuadro1').style.backgroundColor='yellow';
+
+  }
+
+  function salida()
+  {
+    document.getElementById('recuadro1').style.color='black';
+    document.getElementById('recuadro1').style.backgroundColor='white';
+
+  }
+</script>
+  
+</body>
+</html>
+
